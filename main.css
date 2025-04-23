@@ -1,0 +1,265 @@
+/* Подключение шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #111;
+    background: #ffffff;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: #ffffff;
+    max-width: 100%;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+
+}
+
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: #68b738;
+}
+
+.hero .text {
+    max-width: 400px;
+}
+
+.hero .text h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero .text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero .button {
+    padding: 15px 25px;
+    background-color: #68b738;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+}
+
+.hero .image img {
+    /* max-width: 300px; */
+    margin-left: 50px;
+    width: 100%;
+
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 100px;
+    background-color: #f2f2f2;
+}
+
+.benefit {
+    max-width: 400px;
+    background: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+.benefit img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.benefit h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.how-it-works {
+    padding: 60px 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.how-it-works h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.steps {
+    /* display: grid; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+}
+
+.steps img {
+    width: 60px;
+    height: 60px;
+}
+
+.example {
+    background-color: #eaeaea;
+    padding: 60px 100px;
+}
+
+.example h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.cat-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.cat-info p {
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.cat-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-weight: 700;
+    display: flex;
+    gap: 30px;
+}
+
+.cat-info img {
+    max-width: 300px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    background-color: #EDEDEE;
+
+}
+
+.map img {
+    width: 100%;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #eaeaea;
+    font-size: 14px;
+    color: #777
+}
+
+/* Мобилки */
+@media (max-width: 600px) {
+    .container {
+        font-size: 16px;
+        flex-direction: column;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .cat-info {
+        flex-direction: column;
+    }
+
+    .hero .image img {
+        margin: 15px;
+    }
+
+    .hero {
+        padding: 50px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #68b738;
+        flex-direction: column;
+    }
+
+    .hero .text {
+        font-size: 12px;
+    }
+
+    .hero .text h1 {
+        font-size: 20px;
+    }
+
+    .hero .button {
+        padding: 10px 5px;
+    }
+
+    .logo img {
+        width: 100px;
+        left: 0;
+        top: 10px;
+        margin-right: 10px;
+    }
+
+
+
+    .header {
+        padding: 0 50px;
+        flex-direction: column;
+    }
+
+    .steps div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .benefits {
+        display: flex;
+        flex-direction: column;
+    }
+    .map {
+        background-image: url(./assets/photos/334.png);
+    }
+
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+    .container {
+        font-size: 18px;
+    }
+}
