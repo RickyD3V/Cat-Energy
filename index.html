@@ -1,88 +1,153 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Energy</title>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f8f4">
+  <meta name="description" content="Cat Energy — функциональное питание для активных и здоровых котов.">
+  <title>Cat Energy — питание для котов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
 </head>
-
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo"><img src="./assets/photos/logo-desktop.png" alt=""></div>
-            <nav class="nav">
-                <a href="#">ГЛАВНАЯ</a>
-                <a href="#">КАТАЛОГ Продукции</a>
-                <a href="#">ПОДБОР ПРОГРАММЫ</a>
-            </nav>
-        </header>
+  <div class="top-line"></div>
+  <div class="container">
+    <header class="header">
+      <a class="logo" href="#home" aria-label="Cat Energy — на главную">
+        <img src="./assets/photos/logo-desktop.png" alt="Cat Energy">
+        <span>CAT<span class="logo-accent">ENERGY</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="active" href="#home">Главная</a>
+        <a href="#programs">Программы</a>
+        <a href="#how">Как это работает</a>
+        <a href="#example">Результат</a>
+        <a class="nav-cta" href="#calculator">Подобрать питание <span>↗</span></a>
+      </nav>
+    </header>
 
-        
-        <section class="hero">
-            <div class="text">
-                <h1>Функциональное питание для котов</h1>
-                <p>Занимаешься собой? Займись котом!</p>
-                <a href="#" class="button">ПОДОБРАТЬ ПРОГРАММУ</a>
-            </div>
-            <div class="image">
-                <img src="./assets/photos/index-can.png" alt="Cat Energy">
-            </div>
-        </section>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> ПИТАНИЕ С ЗАБОТОЙ</span>
+          <h1>Сильный кот.<br><em>Счастливый</em> кот.</h1>
+          <p>Функциональное питание, которое помогает вашему питомцу оставаться активным, любопытным и полным энергии каждый день.</p>
+          <div class="hero-actions">
+            <a href="#calculator" class="button button-dark">Подобрать программу <span>→</span></a>
+            <a href="#how" class="text-link">Узнать больше <span>↓</span></a>
+          </div>
+          <div class="hero-note"><span class="note-icon">✦</span><span>Продуманный рацион —<br>больше поводов для мурчания.</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-circle"></div>
+          <div class="hero-tag tag-top">100% заботы</div>
+          <img class="hero-can" src="./assets/photos/index-can.png" alt="Банка корма Cat Energy">
+          <div class="hero-tag tag-bottom"><strong>CAT</strong> ENERGY<br><small>DAILY FORMULA</small></div>
+          <div class="hero-spark spark-one">✳</div><div class="hero-spark spark-two">✦</div>
+        </div>
+        <div class="hero-bottom"><span>01 / 04</span><span class="hero-line"></span><span>ЗАБОТА НАЧИНАЕТСЯ С МАЛОГО</span></div>
+      </section>
 
-        <section class="benefits">
-            <div class="benefit">
-                <img src="./assets/photos/cat_back.png" alt="Похудение">
-                <h2>ПОХУДЕНИЕ</h2>
-                <p>Ваш кот сбросит лишний вес и станет стройным и активным.</p>
-            </div>
-            <div class="benefit">
-                <img src="./assets/photos/cat_back (1).png" alt="Набор массы">
-                <h2>НАБОР МАССЫ</h2>
-                <p>Набирайте массу и развивайте мышцы вместе с вашим питомцем.</p>
-            </div>
-        </section>
+      <section class="benefits section" id="programs">
+        <div class="section-heading">
+          <span class="eyebrow">НАШИ ПРОГРАММЫ</span>
+          <h2>У каждого кота<br>свой <em>характер.</em></h2>
+          <p>Выберите направление, которое подходит именно вашему хвостатому другу.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="benefit-top"><span class="card-number">01</span><span class="card-icon">↗</span></div>
+            <div class="benefit-image"><img src="./assets/photos/cat_back.png" alt="Кот для программы поддержания формы"></div>
+            <h3>Лёгкость и баланс</h3>
+            <p>Сбалансированный рацион для поддержания активности и комфортной формы.</p>
+            <a href="#calculator" class="card-link" data-goal="balance">Выбрать программу <span>→</span></a>
+          </article>
+          <article class="benefit-card benefit-card-green">
+            <div class="benefit-top"><span class="card-number">02</span><span class="card-icon">↗</span></div>
+            <div class="benefit-image"><img src="./assets/photos/cat_back (1).png" alt="Кот для программы активного образа жизни"></div>
+            <h3>Энергия и сила</h3>
+            <p>Питание для активных питомцев с учётом их ежедневных потребностей.</p>
+            <a href="#calculator" class="card-link" data-goal="active">Выбрать программу <span>→</span></a>
+          </article>
+        </div>
+      </section>
 
-        <section class="how-it-works">
-            <h2>Как это работает</h2>
-            <div class="steps">
-                <div> <img src="./assets/photos/Group 1.png" alt="">
-                    Функциональное питание содержит только полезные питательные вещества.</div>
-                <div> <img src="./assets/photos/Group 2.png" alt="">
-                    Выпускается в виде корма.</div>
-                <div><img src="./assets/photos/Group 3.png" alt="">
-                    Форма корма удобна для хранения и транспортировки.</div>
-                <div><img src="./assets/photos/Group 4.png" alt="">
-                    Программа питания подбирается индивидуально.</div>
-            </div>
-        </section>
+      <section class="how section" id="how">
+        <div class="section-heading section-heading-row">
+          <div><span class="eyebrow">ПРОСТО И ПОНЯТНО</span><h2>Как это <em>работает?</em></h2></div>
+          <p>Никакой магии — только последовательный подход и внимание к деталям.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-index">01</span><div class="step-icon">⌕</div><h3>Изучаем потребности</h3><p>Учитываем возраст, вес и образ жизни вашего питомца.</p></article>
+          <article class="step"><span class="step-index">02</span><div class="step-icon">◈</div><h3>Подбираем рацион</h3><p>Выбираем подходящий вариант питания и режим.</p></article>
+          <article class="step"><span class="step-index">03</span><div class="step-icon">✳</div><h3>Следим за прогрессом</h3><p>Наблюдаем за самочувствием и активностью кота.</p></article>
+          <article class="step"><span class="step-index">04</span><div class="step-icon">♡</div><h3>Больше энергии</h3><p>Забота становится частью каждого счастливого дня.</p></article>
+        </div>
+      </section>
 
-        <section class="example">
-            <h2>Живой пример</h2>
-            <div class="cat-info">
-                <div>
-                    <p>Бруно сбросил 5 кг за 60 дней. До этого он весил 10 кг и почти не двигался. Теперь он активный и
-                        жизнерадостный кот!</p>
-                    <ul>
-                        <li>5 КГ</li>
-                        <li>60 ДНЕЙ</li>
-                        <li>15 000 РУБ.</li>
-                    </ul>
-                </div>
-                <img src="./assets/photos/image_cat_desktop.png" alt="Бруно до и после">
-            </div>
-        </section>
+      <section class="example section" id="example">
+        <div class="example-copy">
+          <span class="eyebrow">ИСТОРИЯ НАШЕГО ДРУГА</span>
+          <h2>Маленькие шаги.<br><em>Большие перемены.</em></h2>
+          <p>Бруно стал больше двигаться, охотнее играть и с интересом исследовать каждый уголок дома. Его история напоминает: внимание к привычкам питомца действительно важно.</p>
+          <div class="stats">
+            <div><strong>60</strong><span>дней заботы</span></div>
+            <div><strong>2×</strong><span>больше игр</span></div>
+            <div><strong>24/7</strong><span>мурчание</span></div>
+          </div>
+          <small class="disclaimer">История приведена в качестве примера. Питание и изменения веса питомца лучше обсуждать с ветеринарным врачом.</small>
+        </div>
+        <div class="example-photo"><div class="photo-frame"></div><img src="./assets/photos/image_cat_desktop.png" alt="Бруно — пушистый герой истории"><span class="photo-caption">BRUNO — HAPPY CUSTOMER</span></div>
+      </section>
 
-        <section class="map">
-            <img src="./assets/photos/location.png" alt="Карта">
-        </section>
+      <section class="calculator-section section" id="calculator">
+        <div class="calculator-intro">
+          <span class="eyebrow">ИНТЕРАКТИВНЫЙ ПОДБОР</span>
+          <h2>Давайте узнаем,<br>что подойдёт <em>вашему коту.</em></h2>
+          <p>Ответьте на три коротких вопроса — и получите предварительную рекомендацию.</p>
+          <div class="calculator-tip"><span>✦</span> Это ориентир для знакомства с программами, а не ветеринарное назначение.</div>
+        </div>
+        <form class="calculator" id="cat-form">
+          <div class="form-heading"><span>ВАШ ПИТОМЕЦ</span><span class="form-step">01 — 03</span></div>
+          <label for="cat-name">Как зовут вашего кота?</label>
+          <input id="cat-name" name="name" type="text" placeholder="Например, Барсик" maxlength="24">
+          <div class="form-row">
+            <div><label for="cat-age">Возраст, лет</label><input id="cat-age" name="age" type="number" min="0" max="30" placeholder="3" required></div>
+            <div><label for="cat-weight">Вес, кг</label><input id="cat-weight" name="weight" type="number" min="0.5" max="20" step="0.1" placeholder="4.5" required></div>
+          </div>
+          <fieldset><legend>Какой образ жизни у кота?</legend>
+            <label class="choice"><input type="radio" name="goal" value="balance" checked><span class="choice-mark"></span><span><strong>Спокойный</strong><small>Любит отдыхать и наблюдать</small></span></label>
+            <label class="choice"><input type="radio" name="goal" value="active"><span class="choice-mark"></span><span><strong>Активный</strong><small>Играет, бегает и исследует</small></span></label>
+          </fieldset>
+          <button class="button button-dark submit-button" type="submit">Получить рекомендацию <span>→</span></button>
+          <p class="form-error" id="form-error" role="alert"></p>
+          <div class="result" id="result" aria-live="polite" hidden>
+            <span class="result-kicker">ВАША ПРЕДВАРИТЕЛЬНАЯ РЕКОМЕНДАЦИЯ</span>
+            <h3 id="result-title"></h3><p id="result-text"></p>
+            <button class="result-reset" type="reset">Изменить ответы ↺</button>
+          </div>
+        </form>
+      </section>
 
-        <footer class="footer">
-            © 2025 CAT ENERGY
-        </footer>
-    </div>
+      <section class="closing-cta">
+        <div><span class="eyebrow">CAT ENERGY</span><h2>Забота — это<br><em>ежедневный выбор.</em></h2></div>
+        <a href="#calculator" class="button button-light">Начать подбор <span>↗</span></a>
+        <span class="cta-decoration">✳</span>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer-brand" href="#home">CAT<span>ENERGY</span></a>
+      <span>Питание с заботой о каждом хвостике.</span>
+      <a class="back-top" href="#home">Наверх ↑</a>
+      <small>© 2025 CAT ENERGY</small>
+    </footer>
+  </div>
 </body>
-
 </html>
-ы
